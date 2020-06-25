@@ -12,6 +12,7 @@ public class TodoFrame extends JFrame {
 
         setSize(500, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
         add(new TodoPanel());
 
         setVisible(true);

@@ -1,6 +1,9 @@
 package practice;
 
+import javafx.scene.layout.Border;
+
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -20,6 +23,7 @@ public class TodoPanel extends JPanel implements KeyListener {
 
         setLayout(new BorderLayout());
         inputTextField.addKeyListener(this);
+        todoResultArea.setBorder(new TitledBorder("TodoList"));
 
 
         add(inputTextField, new BorderLayout().SOUTH);
